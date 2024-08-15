@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Users - Freelancing Platform</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../includes/styles.css">
+
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <!-- Navigation Menu -->
+    <nav>
+      <ul>
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+        <li><a href="../admin/dashboard.html">Dashboard</a></li>
+        <li><a href="../admin/manage_projects.html">manage projects</a></li>
+        <li><a href="../admin/manage_users.html">manage users</a></li>
+
+      </ul>
+    </nav>
+    <div class="logo">
+        <img src="../images/freelance.png" alt="Freelancing Platform Logo">
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container mt-5">
+    <h1>Manage Users</h1>
+    <!-- Users management content here -->
+    <div class="row">
+      <div class="col-md-6">
+        <!-- User List -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">User List</h5>
+            <ul class="list-group">
+              <li class="list-group-item">User 1</li>
+              <li class="list-group-item">User 2</li>
+              <li class="list-group-item">User 3</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <!-- Add User Form -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Add New User</h5>
+            <form id="addUserForm">
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter username">
+                <small id="usernameError" class="text-danger"></small>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                <small id="emailError" class="text-danger"></small>
+              </div>
+              <button type="submit" class="btn btn-primary">Add User</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="foot">
+    <p>&copy; 2024 Freelancing Platform. All rights reserved.</p>
+  </footer>
+
+  
+  <!-- JavaScript for form validation -->
+  <script >
+      function validateUserForm() {
+    var username = document.getElementById("username").value;
+    var email = document.getElementById("email").value;
+    var isValid = true;
+
+    // Validate username
+    if (!username.trim()) {
+      document.getElementById("usernameError").innerText = "Please enter username.";
+      isValid = false;
+    } else {
+      document.getElementById("usernameError").innerText = "";
+    }
+
+    // Validate email
+    if (!email.trim()) {
+      document.getElementById("emailError").innerText = "Please enter email.";
+      isValid = false;
+    } else {
+      document.getElementById("emailError").innerText = "";
+    }
+
+    return isValid;
+  }
+
+  document.getElementById("addUserForm").addEventListener("submit", function(event) {
+    if (!validateUserForm()) {
+      event.preventDefault(); // Prevent form submission if validation fails
+    }
+  });
+  </script>
+</body>
+</html>

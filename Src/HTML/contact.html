@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Freelancing Platform</title>
+  <link rel="stylesheet" href="includes/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <!-- Navigation Menu -->
+    <nav>
+      <ul>
+        <li><a href="../freelancing/home.html">Home</a></li>
+        <li><a href="../freelancing/about.html">About</a></li>
+        <li><a href="../freelancing/contact.html">Contact</a></li>
+        <li><a href="../freelancing/admin/dashboard.html">Dashboard</a></li>
+        <li><a href="../freelancing/admin/manage_projects.html">manage projects</a></li>
+        <li><a href="../freelancing/admin/manage_users.html">manage users</a></li>
+      </ul>
+    </nav>
+    <div class="logo">
+        <img src="images/freelance.png" alt="Freelancing Platform Logo">
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>Contact Us</h1>
+    <p>Have questions or feedback? Reach out to us using the form below:</p>
+    <form id="contactForm">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email"><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Freelancing Platform. All rights reserved.</p>
+  </footer>
+  <script >
+    // scripts.js
+
+// Function to validate the contact form
+function validateContactForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+  var isValid = true;
+
+  // Validate name
+  if (!name.trim()) {
+    alert("Please enter your name.");
+    isValid = false;
+  }
+
+  // Validate email
+  if (!email.trim()) {
+    alert("Please enter your email.");
+    isValid = false;
+  }
+
+  // Validate message
+  if (!message.trim()) {
+    alert("Please enter your message.");
+    isValid = false;
+  }
+
+  return isValid;
+}
+
+// Event listener for form submission
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+  if (!validateContactForm()) {
+    event.preventDefault(); // Prevent form submission if validation fails
+  }
+});
+
+
+  </script>
+
+</body>
+</html>

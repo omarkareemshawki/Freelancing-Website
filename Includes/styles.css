@@ -1,0 +1,169 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    padding-bottom: 100px; 
+    
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.logo img {
+    width: 40px; 
+    height: 40px;
+    margin-right: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+}
+
+
+.container video {
+    width: 100%; 
+    max-width: 100%; 
+    height: auto; 
+}
+
+.container h1 {
+    font-size: 40px;
+    margin-top: 80px;
+}
+
+
+form {
+    margin-top: 20px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+
+.container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.container h2 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.container ul {
+    text-align: left;
+    margin-left: 0;
+    padding-left: 20px;
+}
+
+.container ul li {
+    margin-bottom: 10px;
+}
+
+.btn-login,
+.btn-signup {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-login:hover,
+.btn-signup:hover {
+  background-color: #0056b3;
+}
+
+.btn-signup{
+    background-color: brown;
+}
+
+.logo h1{
+    margin-right: 20px;
+    color:#007bff;
+}
+

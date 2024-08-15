@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Job Posting</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Add custom styles here */
+    .job-advertisement {
+      margin-bottom: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .job-advertisement:hover {
+      background-color: #f0f0f0;
+    }
+    .job-advertisement .row {
+      align-items: center;
+    }
+    .job-advertisement .col-md-4 {
+      font-size: 40px;
+    }
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">workwise</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="../home.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Web Development Job Posting</h1>
+    
+    <!-- Job Posting Form -->
+    <form id="jobPostingForm">
+      <div class="form-group">
+        <label for="jobTitle">Job Title:</label>
+        <input type="text" class="form-control" id="jobTitle" required>
+        <div class="invalid-feedback">Please enter the job title.</div>
+      </div>
+      <div class="form-group">
+        <label for="companyName">Company Name:</label>
+        <input type="text" class="form-control" id="companyName" required>
+        <div class="invalid-feedback">Please enter the company name.</div>
+      </div>
+      <div class="form-group">
+        <label for="jobDescription">Job Description:</label>
+        <textarea class="form-control" id="jobDescription" rows="5" required></textarea>
+        <div class="invalid-feedback">Please enter the job description.</div>
+      </div>
+      <div class="form-group">
+        <label for="skillsRequired">Skills Required:</label>
+        <input type="text" class="form-control" id="skillsRequired" required>
+        <div class="invalid-feedback">Please enter the required skills.</div>
+      </div>
+      <div class="form-group">
+        <label for="experienceRequired">Experience Required (years):</label>
+        <input type="number" class="form-control" id="experienceRequired" required>
+        <div class="invalid-feedback">Please enter the required experience.</div>
+      </div>
+      <div class="form-group">
+        <label for="location">Location:</label>
+        <input type="text" class="form-control" id="location" required>
+        <div class="invalid-feedback">Please enter the job location.</div>
+      </div>
+      <div class="form-group">
+        <label for="contactEmail">Contact Email:</label>
+        <input type="email" class="form-control" id="contactEmail" required>
+        <div class="invalid-feedback">Please enter a valid email address.</div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <br><br><br> <br>
+    <h1 class="text-center mb-4">Web Development Job Advertising</h1>
+
+    <br> <br> <br> <br>
+  <!-- Job Advertisement 1 -->
+<div class="job-advertisement">
+    <div class="row">
+      <div class="col-md-4">
+        <i class="fas fa-code"></i>
+      </div>
+      <div class="col-md-8">
+        <h2>Frontend Developer</h2>
+        <p><strong>Company:</strong> ABC Tech</p>
+        <p><strong>Location:</strong> New York, NY</p>
+        <p><strong>Experience Required:</strong> 3+ years</p>
+        <p><strong>Skills Required:</strong> HTML, CSS, JavaScript, React.js</p>
+        <p><strong>Contact Email:</strong> info@abctech.com</p>
+      </div>
+    </div>   
+  </div>
+  <br> <br> <br> <br>
+  
+  <!-- Job Advertisement 2 -->
+  <div class="job-advertisement">
+    <div class="row">
+      <div class="col-md-4">
+        <i class="fas fa-cogs"></i>
+      </div>
+      <div class="col-md-8">
+        <h2>Backend Developer</h2>
+        <p><strong>Company:</strong> XYZ Solutions</p>
+        <p><strong>Location:</strong> San Francisco, CA</p>
+        <p><strong>Experience Required:</strong> 5+ years</p>
+        <p><strong>Skills Required:</strong> Node.js, Express.js, MongoDB</p>
+        <p><strong>Contact Email:</strong> hr@xyzsolutions.com</p>
+      </div>
+    </div>   
+  </div>
+  <br> <br> <br> <br>
+  
+  <!-- Job Advertisement 3 -->
+  <div class="job-advertisement">
+    <div class="row">
+      <div class="col-md-4">
+        <i class="fas fa-laptop-code"></i>
+      </div>
+      <div class="col-md-8">
+        <h2>Full Stack Developer</h2>
+        <p><strong>Company:</strong> PQR Software</p>
+        <p><strong>Location:</strong> Chicago, IL</p>
+        <p><strong>Experience Required:</strong> 4+ years</p>
+        <p><strong>Skills Required:</strong> HTML, CSS, JavaScript, Node.js, React.js, MongoDB</p>
+        <p><strong>Contact Email:</strong> careers@pqrsoftware.com</p>
+      </div>
+    </div>   
+  </div>
+  <br> <br> <br> <br>
+  
+  <!-- Job Advertisement 4 -->
+  <div class="job-advertisement">
+    <div class="row">
+      <div class="col-md-4">
+        <i class="fas fa-paint-brush"></i>
+      </div>
+      <div class="col-md-8">
+        <h2>UI/UX Designer</h2>
+        <p><strong>Company:</strong> UI/UX Creations</p>
+        <p><strong>Location:</strong> Los Angeles, CA</p>
+        <p><strong>Experience Required:</strong> 2+ years</p>
+        <p><strong>Skills Required:</strong> Adobe XD, Figma, Sketch</p>
+        <p><strong>Contact Email:</strong> hr@uiuxcreations.com</p>
+      </div>
+    </div>   
+  </div>
+  <br> <br> <br> <br>
+  
+  <!-- Job Advertisement 5 -->
+  <div class="job-advertisement">
+    <div class="row">
+      <div class="col-md-4">
+        <i class="fab fa-wordpress"></i>
+      </div>
+      <div class="col-md-8">
+        <h2>WordPress Developer</h2>
+        <p><strong>Company:</strong> WP Experts</p>
+        <p><strong>Location:</strong> Miami, FL</p>
+        <p><strong>Experience
+  
+    </div>
+
+
+  </div>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // JavaScript form validation
+    $(document).ready(function() {
+      $('#jobPostingForm').submit(function(event) {
+        var form = $(this)[0];
+        var jobTitle = $('#jobTitle').val();
+        var companyName = $('#companyName').val();
+        var jobDescription = $('#jobDescription').val();
+        var skillsRequired = $('#skillsRequired').val();
+        var experienceRequired = $('#experienceRequired').val();
+        var location = $('#location').val();
+        var contactEmail = $('#contactEmail').val();
+
+        if (!jobTitle || !companyName || !jobDescription || !skillsRequired || !experienceRequired || !location || !contactEmail) {
+          event.preventDefault();
+          event.stopPropagation();
+          alert('Please fill in all fields.');
+          return false;
+        }
+
+        if (!isValidEmail(contactEmail)) {
+          event.preventDefault();
+          event.stopPropagation();
+          alert('Please enter a valid email address.');
+          return false;
+        }
+
+        if (experienceRequired <= 0) {
+          event.preventDefault();
+          event.stopPropagation();
+          alert('Please enter a valid experience value.');
+          return false;
+        }
+
+        return true;
+      });
+
+      function isValidEmail(email) {
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+      $('a[href*="#"]').on('click', function(e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        $('html, body').animate({
+          scrollTop: $(target).offset().top
+        }, 1000);
+      });
+
+      // Hover Effect
+      $('.job-advertisement').hover(function() {
+        $(this).css('background-color', '#f0f0f0');
+      }, function() {
+        $(this).css('background-color', 'transparent');
+      });
+
+
+    });
+  </script>
+  
+</body>
+</html>

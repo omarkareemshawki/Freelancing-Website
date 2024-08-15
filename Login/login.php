@@ -1,0 +1,149 @@
+<?php
+
+
+
+// PHP code for database connection
+$servername = "127.0.0.1";
+$username = "root";
+$password = "";
+$dbname = "FreelancePlatform";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css">
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.login-container {
+  width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+.container h1{
+color: aliceblue;
+font-size: 40px;
+margin-left: 30%;
+margin-top: 10%;
+}
+
+.back-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #f6f7f8;
+      color: #000000;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 45%;
+    }
+
+    .back-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .back-btn i {
+      margin-right: 5px;
+    }
+</style>
+
+</head>
+<body>
+<?php include 'C:\xampp\htdocs\freelancing\header.php';?>
+    <div class="container">
+        <h1>Welcome to our Freelancing Platform</h1>
+        <a href="../freelancing/home.html" class="back-btn"><i>&#8592;</i> Back to Home</a>
+
+
+        </div>
+
+        
+
+  <div class="login-container">
+    <h2>Login</h2>
+    <form action="login.php" method="POST">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="../freelancing/signup.html">Sign up</a></p>
+  </div>
+</body>
+<script src="../freelancing/javascript/scripts.js" ></script>
+<?php include 'C:\xampp\htdocs\freelancing\footer.php';?>
+</html>
